@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Formulario QR</h1>
+        <p>Complete los siguientes datos:</p>
+
+        <form id="formulario">
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Teléfono</label>
+            <input type="tel" name="telefono">
+
+            <label>Correo electrónico</label>
+            <input type="email" name="correo">
+
+            <label>Observaciones</label>
+            <textarea name="observaciones" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
