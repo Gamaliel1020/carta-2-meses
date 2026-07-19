@@ -1,8 +1,11 @@
-document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault();
+function verificarRespuesta() {
+    let respuesta = document.getElementById("respuesta").value.trim().toLowerCase();
 
-    document.getElementById("mensaje").textContent =
-        "Formulario enviado correctamente.";
-
-    this.reset();
-});
+    if (respuesta === "19 de mayo") {
+        document.getElementById("pregunta").style.display = "none";
+        document.getElementById("carta").style.display = "block";
+    } else {
+        document.getElementById("mensaje").textContent =
+            "Respuesta incorrecta. Inténtalo nuevamente.";
+    }
+}
